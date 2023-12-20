@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@angularstorybook/one": ["one/src/index.ts"],
+      "@angularstorybook/three": ["three/src/index.ts"],
+      "@angularstorybook/twp": ["twp/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
