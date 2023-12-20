@@ -16,10 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@angularstorybook/five": ["five/src/index.ts"],
-      "@angularstorybook/four": ["four/src/index.ts"],
-      "@angularstorybook/one": ["one/src/index.ts"],
-      "@angularstorybook/three": ["three/src/index.ts"],
-      "@angularstorybook/two": ["two/src/index.ts"]
+      "@angularstorybook/four": ["four/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
