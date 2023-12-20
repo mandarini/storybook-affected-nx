@@ -4,12 +4,7 @@
     "build": {
       "cache": true,
       "dependsOn": ["^build"],
-      "inputs": [
-        "production",
-        "^production",
-        "!{projectRoot}/**/*.stories.@(js|jsx|ts|tsx|mdx)",
-        "!{projectRoot}/.storybook/**/*"
-      ]
+      "inputs": ["production", "^production"]
     },
     "lint": {
       "cache": true,
