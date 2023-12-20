@@ -15,7 +15,7 @@ export const Primary: Story = {
   args: {},
 };
 
-export const Hello: Story = {
+export const asdfasf: Story = {
   args: {},
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
