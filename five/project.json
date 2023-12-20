@@ -1,0 +1,37 @@
+{
+  "name": "five",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "five/src",
+  "prefix": "angularstorybook",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "five/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "five/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "five/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "five/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  }
+}
