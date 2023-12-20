@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'twp',
+  displayName: 'two',
   preset: '../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../coverage/twp',
+  coverageDirectory: '../coverage/two',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
